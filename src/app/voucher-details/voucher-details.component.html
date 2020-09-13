@@ -1,0 +1,25 @@
+<div class="container-fluid text-center">
+    <form action="#">
+      <div class="text-left d-flex align-items-center"> 
+        <img src="./assets/images/product001.png" alt="" class="productimgTop" style="max-width: 50%;">
+        <div class="ml-2">
+          <label class="control-label label-md color-o text-left mb-0">ein prosit</label>
+          <label class="control-label label-xs text-left">um brinde</label>
+        </div>
+      </div>
+      <label class="control-label label-sm productTop-tela08 mb-0">Na compra de<br>
+        3 Eisenbahn Pilsen 600ml<br>
+        é só apresentar o voucher<br>
+        e a primeira é por nossa conta.</label>
+      <small class="firstorder-tela08 mb-5">promoção válida somente para o primeiro pedido na mesa.</small>
+      <div class="form-group">
+        <div class="inputBg">
+          <input class="fControl" readonly type="text" id="nome" name="nome" aria-label="nome" title="nome" placeholder="GX073DC234" value="{{voucherNumber}}">
+        </div>
+        <label class="control-label label-sm mt-3">Código para resgate do voucher</label>
+      </div>
+      <label class="control-label label-sm">para conhecer mais sobre nossas cervejas, clique aqui</label>
+      <button type="button" (click)="navigateNext()" class="btn btn-img"><img src="./assets/images/next-btn.png" alt=""></button>
+      <span class="badge badge-light mb-5">APRECIE COM MODERAçÃo</span>
+    </form>
+  </div>

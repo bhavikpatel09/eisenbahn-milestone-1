@@ -1,0 +1,30 @@
+<img class="top-arrow" src="./assets/images/top-arrow-bg.png" alt="">
+<div class="container-fluid text-center">
+  <form action="#">
+    <label class="MainTitle"><img src="./assets/images/logo.png" alt=""></label>
+    <div class="form-group">
+      <label class="control-label">tem mais de <span class="label-lg color-o">18 anos?</span></label>
+    </div>
+    <div class="row mb-5">
+      <aside class="col-6">
+        <button type="button" (click)="navigateNext()"
+          class="btn btn-primary btn-rounded w-100"><span>sim</span></button>
+      </aside>
+      <aside class="col-6">
+        <button type="button" (click)="openModal('age-not-18')"
+          class="btn btn-primary btn-rounded w-100"><span>não</span></button>
+      </aside>
+    </div>
+  </form>
+  <p class="text-center mb-5">Eu li e aceito a <a href="javascript:void(0)" (click)="openModal('politica-dialog')">Política de Privacidade</a></p>
+</div>
+<div class="bottom-bg"> <img src="./assets/images/bottom-dots.png" alt=""> </div>
+<app-dialog-modal class="modal fade show" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+  id="age-not-18" title="Comentários">
+  <p>Desculpe, mas você não pode participar.</p>
+</app-dialog-modal>
+
+<app-dialog-modal class="modal fade show" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+  id="politica-dialog" title="Política de Privacidade">
+   <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p> 
+</app-dialog-modal>
